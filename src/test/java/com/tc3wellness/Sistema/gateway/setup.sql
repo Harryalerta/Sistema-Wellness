@@ -1,0 +1,74 @@
+DELETE FROM
+    ESPECIALIDADE_PROFISSIONAL;
+
+DELETE FROM
+    ESTABELECIMENTO_PROFISSIONAL;
+
+DELETE FROM
+    PROFISSIONAL;
+
+DELETE FROM
+    ESPECIALIDADE;
+
+DELETE FROM
+    ESTABELECIMENTO;
+
+INSERT INTO
+    PROFISSIONAL (
+        HORARIO_FECHAMENTO,
+        HORARIO_INICIO,
+        VALOR,
+        ID,
+        NOME
+    )
+VALUES
+    (
+        '01:00',
+        '02:00',
+        200,
+        '9a6b7c05-563d-40a4-baca-ee5217062b66',
+        'TESTE 01'
+    ),
+    (
+        '01:00',
+        '02:00',
+        300,
+        '38d6f891-cb51-402d-88d6-24c326ba2e52',
+        'TESTE 02'
+    );
+
+;
+
+INSERT INTO
+    ESPECIALIDADE (ID, DESCRICAO, NOME)
+VALUES
+    (
+        '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+        'MANICURES CANHOTAS',
+        'MANICORES ESQUERDAS'
+    );
+
+INSERT INTO
+    ESTABELECIMENTO (
+        ID,
+        NOME,
+        ENDERECO,
+        HORARIO_ABERTURA,
+        HORARIO_FECHAMENTO
+    )
+VALUES
+    (
+        'fd560d1d-b06a-4105-ac45-21a4338c0f5f',
+        'ESTABELECIMENTO TESTE 01',
+        'ENDERECO DE TESTE 01',
+        '03:00',
+        '04:00'
+    );
+
+INSERT INTO
+    ESPECIALIDADE_PROFISSIONAL (ESPECIALIDADE_ID, PROFISSIONAL_ID)
+VALUES
+    (
+        '3fa85f64-5717-4562-b3fc-2c963f66afa6',
+        '38d6f891-cb51-402d-88d6-24c326ba2e52'
+    );
