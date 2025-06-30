@@ -1,10 +1,10 @@
 # Relatorio Técnico e README 
-observação: Esse markdown está presente no próprio projeto e foi objeto de entrega para um trabalho da pós em arquitetura em Java.
+observação: Esse markdown está presente no [repositório Git](https://github.com/Harryalerta/Sistema-Wellness) e foi objeto de entrega para um trabalho da pós em arquitetura em Java.
 
 ## Tecnologias utilizadas
 ### Qualidade de código
 
-Fizemos os testes unitários no JUnit com H2 como entendo ser o Padrão dada nossa stack.
+Fiz os testes unitários no JUnit com H2 como entendo ser o Padrão dada nossa stack.
 
 Para testes integrados utilizei a ferramenta allure para conseguir testar os end-points. 
 
