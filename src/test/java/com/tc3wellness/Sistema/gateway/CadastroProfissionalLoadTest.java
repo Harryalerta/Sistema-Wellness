@@ -68,12 +68,12 @@ public class CadastroProfissionalLoadTest extends Simulation {
         }
 
         private RampRateOpenInjectionStep injection() {
-                int totalUsers = 100;
-                double userRampUpPerInterval = 10;
+                int totalUsers = 200;
+                double userRampUpPerInterval = 2;
                 double rampUpIntervalInSeconds = 5;
 
-                int rampUptimeSeconds = 20;
-                int duration = 40;
+                int rampUptimeSeconds = 40;
+                int duration = 120;
                 return rampUsersPerSec(userRampUpPerInterval / (rampUpIntervalInSeconds)).to(totalUsers)
                                 .during(Duration.ofSeconds(rampUptimeSeconds + duration));
         }

@@ -12,6 +12,8 @@ Utilizei o JaCoCo para análise de cobertura de código.
 
 AssertJ para facilitar a escrita das asserções dos testes unitários. 
 
+Teste de carga foi feito com o [Gatlin.io](https://gatling.io/). 
+
 ### Stack da Solução
 
 Foi feita com spring-boot, utilizando o Swagger como ferramenta de documentação e pensado para ser implantado com Postgres.
@@ -31,6 +33,8 @@ Foi um processo trabalhoso que aprecio enquanto conceito e exercício. Um exempl
 No Techchallenge que estou repondo aqui meu maior foco havia sido os testes unitários. Dessa vez busquei dar enfâse também aos testes integrados e os testes de carga. 
 
 Conforme sugere o TDD eu criei os testes dos endpoints antes da implementação e achei a experiência bem interessante. Ainda melhor do que o TDD de classes específicas do sistema e acho que se deve ao fato das interfaces da requisição e resposta dos endpoits serem mais desacoplados do códigos uma vez que são JSON e dessa forma facilita a mudança de interfaces do elemento sendo testado. 
+
+Foi feito um teste de carga com o Gatlin.
 
 ## Deploys em outros ambientes
 
