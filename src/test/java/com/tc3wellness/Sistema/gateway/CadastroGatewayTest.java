@@ -15,7 +15,7 @@ import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;
 
-@Sql("setup.sql")
+@Sql("classpath:setup.sql")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(Lifecycle.PER_CLASS)
 public class CadastroGatewayTest {
