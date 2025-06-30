@@ -1,4 +1,4 @@
-FROM maven:eclipse-temurin-21-alpine AS build
+FROM maven:eclipse-temurin AS build
 COPY . .
 RUN mvn clean package
 
