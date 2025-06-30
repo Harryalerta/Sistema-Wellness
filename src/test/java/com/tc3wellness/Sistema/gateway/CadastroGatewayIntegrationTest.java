@@ -18,7 +18,7 @@ import static io.restassured.RestAssured.given;
 @Sql("/setup.sql")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(Lifecycle.PER_CLASS)
-public class CadastroGatewayTest {
+public class CadastroGatewayIntegrationTest {
         @LocalServerPort
         private int port;
 

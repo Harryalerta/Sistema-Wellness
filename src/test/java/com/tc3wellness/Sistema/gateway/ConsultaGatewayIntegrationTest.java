@@ -19,7 +19,7 @@ import static io.restassured.RestAssured.given;
 @Sql({"/setup.sql"})
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(Lifecycle.PER_CLASS)
-public class ConsultaGatewayTest {
+public class ConsultaGatewayIntegrationTest {
     @LocalServerPort
     private int port;
 
