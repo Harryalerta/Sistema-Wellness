@@ -1,4 +1,4 @@
-FROM maven:3.8.5-openjdk-17 AS build
+FROM maven:eclipse-temurin-21-alpine AS build
 COPY . .
 RUN mvn clean package
 
